@@ -259,7 +259,9 @@
                     ]
                   },
                   "RequirementsWorkExperiences": {
-                    "RequirementsWorkExperience": "Стаж работы по профессии оператор по добыче нефти и газа не менее трех лет"
+                    "RequirementsWorkExperience": [
+                      "Стаж работы по профессии оператор по добыче нефти и газа не менее трех лет"
+                    ]
                   },
                   "SpecialConditionsForAdmissionToWork": {
                     "SpecialConditionForAdmissionToWork": [
@@ -734,7 +736,9 @@
                     ]
                   },
                   "RequirementsWorkExperiences": {
-                    "RequirementsWorkExperience": "Стаж работы по профессии «Оператор по добыче нефти и газа» не менее трех лет"
+                    "RequirementsWorkExperience": [
+                      "Стаж работы по профессии «Оператор по добыче нефти и газа» не менее трех лет"
+                    ]
                   },
                   "SpecialConditionsForAdmissionToWork": {
                     "SpecialConditionForAdmissionToWork": [
@@ -834,7 +838,9 @@
                           ]
                         },
                         "NecessaryKnowledges": {
-                          "NecessaryKnowledge": "Безопасно выполнять операции в соответствии с технологическими картами на выполнение операций"
+                          "NecessaryKnowledge": [
+                            "Безопасно выполнять операции в соответствии с технологическими картами на выполнение операций"
+                          ]
                         },
                         "OtherCharacteristics": null,
                         "ListFootnes": null

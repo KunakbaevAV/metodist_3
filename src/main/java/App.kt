@@ -15,7 +15,11 @@ object App {
         val filePatch = "C:\\Java\\metodist_3\\src\\main\\resources\\ps_255"
         val profstandart: Prof = reader.readProfstandart(filePatch)
 //        val profstandart = Gson().fromJson<Profstandart>(xmlFile, Profstandart::class.java)
-        println(profstandart.xMLCardInfo!!.professionalStandarts!!.professionalStandart!!.nameProfessionalStandart)
+        println(profstandart.xMLCardInfo!!
+                .professionalStandarts!!
+                .professionalStandart!!
+                .firstSection!!
+                .kindProfessionalActivity)
     }
 }
 
