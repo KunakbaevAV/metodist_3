@@ -1,4 +1,5 @@
 import profstandart.Prof
+import profstandart.Prof.XMLCardInfo.ProfessionalStandarts.ProfessionalStandart.ThirdSection.WorkFunctions.GeneralizedWorkFunctions.GeneralizedWorkFunction
 
 /**
  * @autor Kunakbaev Artem
@@ -6,20 +7,34 @@ import profstandart.Prof
 object App {
     @JvmStatic
     fun main(args: Array<String>) {
-//        val filePatch = "C:\\Java\\metodist_3\\src\\main\\resources\\ps_255"
-//        val reader = JsonReader()
-//        val prof = reader.readProfstandart(filePatch)
-//        prof.print()
 
         val reader = JsonReader()
         val filePatch = "C:\\Java\\metodist_3\\src\\main\\resources\\ps_255"
         val profstandart: Prof = reader.readProfstandart(filePatch)
-//        val profstandart = Gson().fromJson<Profstandart>(xmlFile, Profstandart::class.java)
-        println(profstandart.xMLCardInfo!!
+
+        val size = profstandart.xMLCardInfo!!
                 .professionalStandarts!!
                 .professionalStandart!!
-                .firstSection!!
-                .kindProfessionalActivity)
+                .thirdSection!!
+                .workFunctions!!
+                .generalizedWorkFunctions!!
+                .generalizedWorkFunction!!.size
+        val functions = Array<GeneralizedWorkFunction?>(size) { null }
+
+        for (i in 0 until size) {
+            functions[i] = profstandart.xMLCardInfo
+                    .professionalStandarts!!
+                    .professionalStandart!!
+                    .thirdSection!!
+                    .workFunctions!!
+                    .generalizedWorkFunctions!!
+                    .generalizedWorkFunction!![i]
+        }
+
+        for (i in 0 until size) {
+            println(functions.get(i)!!.nameOTF)
+        }
+
     }
 }
 
