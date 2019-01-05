@@ -3,7 +3,7 @@ package profstandart
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-data class Prof(
+data class Profstandart(
         @SerializedName("XMLCardInfo")
         @Expose
         val xMLCardInfo: XMLCardInfo?
