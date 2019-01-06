@@ -1,3 +1,4 @@
+/*
 package profstandart
 
 import com.google.gson.annotations.Expose
@@ -89,6 +90,7 @@ data class Profstandart(
                                     @SerializedName("SpecialConditionsForAdmissionToWork")
                                     @Expose
                                     val specialConditionsForAdmissionToWork: SpecialConditionsForAdmissionToWork?
+
                             ) {
                                 data class OtherCharacteristicPlus(
                                         @SerializedName("ListEKS")
@@ -239,6 +241,10 @@ data class Profstandart(
                                         @Expose
                                         val specialConditionForAdmissionToWork: List<String?>?
                                 )
+
+                                override fun toString(): String {
+                                    return "$codeOTF$levelOfQualification. $nameOTF)"
+                                }
                             }
                         }
                     }
@@ -329,3 +335,4 @@ data class Profstandart(
     }
 }
 
+*/
